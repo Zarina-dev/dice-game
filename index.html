@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee game from Zarina</title>
+   <link rel="stylesheet" href="index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+  </head>
+  <body >
+<div class="rulesOfGame">
+  <h4>The rule of this simple game</h4>
+  <p class="ruleExplan">Do you remember when you were child you played "Rock Paper Scissors" or "Dice" and if you lose you should complete everything what winner says?
+   This game also similar. <br>If you lose you should do everything what your partner wants. <br>So, give it a go 💪 </p>
+
+</div>
+<button type="button" onclick="start()" class="startButton">START</button>
+<h1> : : D i c e  : :</h1>
+
+<div class="bigOneoGame">
+
+
+<div class="dicee">
+  <p id="name1"> player1</p>
+
+
+
+<img class="img1" src="images/dice6.png" alt="dice6">
+
+
+</div>
+<div class="dicee">
+ <p id="name2"> player2</p>
+
+  <img class="img2" src="images/dice6.png" alt="dice6">
+
+
+<script type="text/javascript">
+  var firstPlayer;
+    var secondPlayer;
+function start() {
+  firstPlayer=prompt("first player");
+  firstPlayer=firstPlayer.slice(0,1).toUpperCase()+firstPlayer.slice(1).toLowerCase();
+  document.getElementById('name1').innerHTML=firstPlayer;
+
+
+secondPlayer=prompt("second Player");
+  secondPlayer=secondPlayer.slice(0,1).toUpperCase()+secondPlayer.slice(1).toLowerCase();
+  document.getElementById('name2').innerHTML=secondPlayer;
+
+}
+
+</script>
+</div>
+</div>
+<script src="index.js" charset="utf-8"></script>
+
+<button type="submit" onclick="reset()" id="refreshButton">REFRESH</button>
+<footer>
+&copy. Zarina</footer>
+  </body>
+</html>
